@@ -1,5 +1,6 @@
-const { Schema, model } = require("mongoose");
-// Schema to create Reaction model
+const { Schema, Types } = require("mongoose");
+
+// Schema to create Reaction
 const reactionSchema = new Schema(
   {
     reactionId: {
@@ -24,9 +25,8 @@ const reactionSchema = new Schema(
     toJSON: {
       getters: true,
     },
+    id: false,
   }
 );
 
-const Reaction = model("reaction", reactionSchema);
-
-module.exports = Reaction;
+module.exports = reactionSchema;
