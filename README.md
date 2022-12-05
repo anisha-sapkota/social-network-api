@@ -28,6 +28,14 @@ npm install
 - `PUT` to update an user by it's \_id
 - `DELETE` to remove an user by it's \_id
 
+`/api/users/:userId/friends`
+
+- `POST` to add a friend
+
+`/api/users/:userId/friends/:friendId`
+
+- `DELETE` to remove a friend
+
 `/api/thoughts`
 
 - `GET` all thoughts
