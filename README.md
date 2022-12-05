@@ -55,6 +55,10 @@ npm install
 
 - `DELETE` to remove a reaction by it's \_id
 
+### Video walkthrough
+
+<https://watch.screencastify.com/v/fs9cKf6PATG9tvaeR5dZ>
+
 ## Credits
 
 Third-party libraries used:
