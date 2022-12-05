@@ -1,4 +1,5 @@
 const { Schema, Types } = require("mongoose");
+const { formatDate } = require("../utils/date");
 
 // Schema to create Reaction
 const reactionSchema = new Schema(
@@ -19,6 +20,7 @@ const reactionSchema = new Schema(
     createdAt: {
       type: Schema.Types.Date,
       default: Date.now,
+      get: formatDate,
     },
   },
   {
